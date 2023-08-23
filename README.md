@@ -11,19 +11,17 @@ Docker
 Getting Started
 Clone the repository:
 
-bash
-Copy code
+
 git clone https://github.com/your_github_username/node-restful-api-docker.git
 cd node-restful-api-docker
 Run locally without Docker:
 
 Install dependencies:
 
-Copy code
 npm install
 Start the server:
 
-Copy code
+
 node server.js
 You should see the server running message. Visit http://localhost:3000 in your browser.
 
@@ -31,12 +29,11 @@ Using Docker:
 
 Build the Docker image:
 
-Copy code
+
 docker build -t node-restful-api-docker .
 Run the Docker container:
 
-arduino
-Copy code
+
 docker run -p 3000:3000 node-restful-api-docker
 Visit http://localhost:3000 in your browser.
 
