@@ -25,12 +25,12 @@ jobs:
       run: npm test
 
     - name: Build Docker image
-      run: docker build -t your_dockerhub_username/node-restful-api-docker:$GITHUB_SHA .
+      run: docker build -t thegeenanacode/node-restful-api-docker:$GITHUB_SHA .
 
     - name: Login to DockerHub
       run: echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
 
     - name: Push Docker image to DockerHub
-      run: docker push your_dockerhub_username/node-restful-api-docker:$GITHUB_SHA
+      run: docker push thegeenanacode/node-restful-api-docker:$GITHUB_SHA
 
 
